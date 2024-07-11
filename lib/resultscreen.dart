@@ -12,12 +12,12 @@ import 'package:flutter_ics_homescreen/resultscreenwidget.dart';
 import 'package:flutter_ics_homescreen/screen1.dart';
 import 'package:flutter_ics_homescreen/screensize.dart';
 import 'package:intl/intl.dart';
-//import 'package:path_provider/path_provider.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:pdf/pdf.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:io';
 import 'package:pdf/widgets.dart' as pw;
-//import 'package:printing/printing.dart';
+import 'package:printing/printing.dart';
 
 
 class ResultScreen extends StatefulWidget {
