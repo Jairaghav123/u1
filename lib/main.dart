@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_ics_homescreen/defectselectionscreen.dart';
 import 'package:flutter_ics_homescreen/inserttrayscreen.dart';
-import 'package:flutter_ics_homescreen/resultinjson.dart';
 import 'package:flutter_ics_homescreen/resultscreen.dart';
 import 'package:flutter_ics_homescreen/screen1.dart';
 import 'package:flutter_ics_homescreen/screen2.dart';
@@ -67,8 +66,7 @@ class MyApp extends StatelessWidget {
         "Results Screen" :  (context)=>const ResultScreen(),
         "Data Log Screen" :  (context)=>const DataLogScreen(),
         "View Data Log  Screen" :  (context)=>const ViewDataLogScreen(),
-        "testsaveddata" : (context)=>DataScreen(),
-        "viewjsondata"  :(context)=> JsonDataWidget(),
+        "testsaveddata" : (context)=>DataScreen()
 
       },
 

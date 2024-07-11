@@ -1,6 +1,8 @@
 import 'dart:convert';
 import 'package:virtual_keyboard_multi_language/virtual_keyboard_multi_language.dart';
 import 'package:flutter/material.dart';
+import 'dart:io';
+import 'package:pdf/widgets.dart' as pw;
 import 'package:flutter_ics_homescreen/analysisscreenwidgets.dart';
 import 'package:flutter_ics_homescreen/screensize.dart';
 import 'package:intl/intl.dart';
@@ -341,6 +343,17 @@ class _StartAnalysisState extends State<StartAnalysis> {
 
     agentData.add(json.encode(newAgent));
     await prefs.setStringList('agents', agentData);
-
+    // Print out the data to see if it's correct
+    // print('New Agent Data: $newAgent');
+    //
+    // // Print out the agentData to see if it's getting added
+    // print('All Agents Data: $agentData');
+    //
+    // // Save to SharedPreferences
+    // await prefs.setStringList('agents', agentData);
+    //
+    // // Check if data is successfully saved
+    // final savedData = prefs.getStringList('agents');
+    // print('Saved Data: $savedData');
   }
 }

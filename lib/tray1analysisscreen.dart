@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_ics_homescreen/Data/variables/variables.dart';
 import 'package:flutter_ics_homescreen/screensize.dart';
@@ -115,21 +113,8 @@ class _Tray1AnalysisState extends State<Tray1Analysis> {
                   child: Padding(
                     padding: const EdgeInsets.all(10.0),
                     child: ElevatedButton(
-
-
-                      onPressed: () async {
+                      onPressed: () {
                         // Action for top camera view button
-
-
-                        var process = await Process.start('bash', ['asset/Deliverable_1_Prediction_Shell_Script/Yolov8_Inference_Shell.sh']);
-                        // print(process.stdout);
-                        // var process=await Process.start('python3',['assets/myfile.py']);
-                        process.stdout.transform(SystemEncoding().decoder).forEach(print);
-
-                        process.stderr.transform(SystemEncoding().decoder).forEach(print);
-
-                        await process.exitCode;
-                        Future.delayed(Duration(seconds: 5));
                         Navigator.pushNamed(context, "Tray 2 Analysis Screen" );
                       },
                       child: Text('Insert Tray2 Next ',style:textStyleForAllText ()),

@@ -117,7 +117,7 @@ class _Tray3AnalysisState extends State<Tray3Analysis> {
                     child: ElevatedButton(
                       onPressed: () {
                         // Action for top camera view button
-                        Navigator.pushNamed(context, "viewjsondata");
+                        Navigator.pushNamed(context, "Results Screen");
                       },
                       child:  Text('Finish ',style:textStyleForAllText ()),
                     ),
